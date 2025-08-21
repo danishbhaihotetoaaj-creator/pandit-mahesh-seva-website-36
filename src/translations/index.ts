@@ -163,6 +163,236 @@ export const translations = {
     en: "All types of traditional Vedic rituals and ceremonies.",
     hi: "सभी प्रकार के पारंपरिक वैदिक अनुष्ठान और समारोह।"
   },
+
+  // Extended Poojas
+  "ganesh_pooja": {
+    en: "Ganesh Pooja",
+    hi: "गणेश पूजा"
+  },
+  "ganesh_pooja_short": {
+    en: "Auspicious worship of Lord Ganesha for obstacle removal.",
+    hi: "विघ्न हर्ता भगवान गणेश की शुभ पूजा।"
+  },
+  "shiv_pooja": {
+    en: "Shiv Pooja",
+    hi: "शिव पूजा"
+  },
+  "shiv_pooja_short": {
+    en: "Sacred worship of Lord Shiva with abhishek and offering.",
+    hi: "अभिषेक और अर्पण के साथ भगवान शिव की पवित्र पूजा।"
+  },
+  "durga_pooja": {
+    en: "Durga Pooja",
+    hi: "दुर्गा पूजा"
+  },
+  "durga_pooja_short": {
+    en: "Divine worship of Goddess Durga for protection and strength.",
+    hi: "सुरक्षा और शक्ति के लिए देवी दुर्गा की दिव्य पूजा।"
+  },
+  "lakshmi_pooja": {
+    en: "Lakshmi Pooja",
+    hi: "लक्ष्मी पूजा"
+  },
+  "lakshmi_pooja_short": {
+    en: "Worship of Goddess Lakshmi for wealth and prosperity.",
+    hi: "धन और समृद्धि के लिए देवी लक्ष्मी की पूजा।"
+  },
+  "saraswati_pooja": {
+    en: "Saraswati Pooja",
+    hi: "सरस्वती पूजा"
+  },
+  "saraswati_pooja_short": {
+    en: "Worship of Goddess Saraswati for knowledge and wisdom.",
+    hi: "ज्ञान और बुद्धि के लिए देवी सरस्वती की पूजा।"
+  },
+  "hanuman_pooja": {
+    en: "Hanuman Pooja",
+    hi: "हनुमान पूजा"
+  },
+  "hanuman_pooja_short": {
+    en: "Worship of Lord Hanuman for strength and devotion.",
+    hi: "शक्ति और भक्ति के लिए भगवान हनुमान की पूजा।"
+  },
+
+  // Sanskaars (Life Stage Ceremonies)
+  "jatakarma_sanskar": {
+    en: "Jatakarma Sanskar",
+    hi: "जातकर्म संस्कार"
+  },
+  "jatakarma_sanskar_short": {
+    en: "Birth ceremony welcoming the newborn with Vedic blessings.",
+    hi: "वैदिक आशीर्वाद के साथ नवजात का स्वागत समारोह।"
+  },
+  "mundan_sanskar": {
+    en: "Mundan Sanskar",
+    hi: "मुंडन संस्कार"
+  },
+  "mundan_sanskar_short": {
+    en: "First hair cutting ceremony for children with rituals.",
+    hi: "अनुष्ठानों के साथ बच्चों का पहला बाल कटाने का समारोह।"
+  },
+  "upanayana_sanskar": {
+    en: "Upanayana Sanskar",
+    hi: "उपनयन संस्कार"
+  },
+  "upanayana_sanskar_short": {
+    en: "Sacred thread ceremony marking spiritual initiation.",
+    hi: "आध्यात्मिक दीक्षा का प्रतीक यज्ञोपवीत संस्कार।"
+  },
+  "vidyarambh_sanskar": {
+    en: "Vidyarambh Sanskar",
+    hi: "विद्यारंभ संस्कार"
+  },
+  "vidyarambh_sanskar_short": {
+    en: "Ceremony for beginning education and learning.",
+    hi: "शिक्षा और अध्ययन प्रारंभ करने का समारोह।"
+  },
+
+  // Anushthaans (Special Rituals)
+  "satyanarayan_vrat": {
+    en: "Satyanarayan Vrat",
+    hi: "सत्यनारायण व्रत"
+  },
+  "satyanarayan_vrat_short": {
+    en: "Sacred vow and worship of Lord Satyanarayan.",
+    hi: "भगवान सत्यनारायण का पवित्र व्रत और पूजा।"
+  },
+  "navgraha_shanti": {
+    en: "Navgraha Shanti",
+    hi: "नवग्रह शांति"
+  },
+  "navgraha_shanti_short": {
+    en: "Planetary peace ritual for favorable celestial influence.",
+    hi: "अनुकूल खगोलीय प्रभाव के लिए ग्रह शांति अनुष्ठान।"
+  },
+  "kalash_sthapana": {
+    en: "Kalash Sthapana",
+    hi: "कलश स्थापना"
+  },
+  "kalash_sthapana_short": {
+    en: "Sacred pot installation ceremony for divine invocation.",
+    hi: "दिव्य आह्वान के लिए पवित्र कलश स्थापना समारोह।"
+  },
+  "hawan_yagya": {
+    en: "Hawan Yagya",
+    hi: "हवन यज्ञ"
+  },
+  "hawan_yagya_short": {
+    en: "Sacred fire ceremony with Vedic mantras and offerings.",
+    hi: "वैदिक मंत्रों और आहुतियों के साथ पवित्र अग्नि समारोह।"
+  },
+
+  // Japas (Chanting Ceremonies)
+  "mahamrityunjaya_jap": {
+    en: "Mahamrityunjaya Jap",
+    hi: "महामृत्युंजय जप"
+  },
+  "mahamrityunjaya_jap_short": {
+    en: "Powerful chanting for health, healing and longevity.",
+    hi: "स्वास्थ्य, उपचार और दीर्घायु के लिए शक्तिशाली जप।"
+  },
+  "gayatri_jap": {
+    en: "Gayatri Jap",
+    hi: "गायत्री जप"
+  },
+  "gayatri_jap_short": {
+    en: "Sacred chanting of Gayatri mantra for wisdom and light.",
+    hi: "बुद्धि और प्रकाश के लिए गायत्री मंत्र का पवित्र जप।"
+  },
+  "vishnu_sahasranaam": {
+    en: "Vishnu Sahasranaam",
+    hi: "विष्णु सहस्रनाम"
+  },
+  "vishnu_sahasranaam_short": {
+    en: "Chanting of 1000 names of Lord Vishnu for blessings.",
+    hi: "आशीर्वाद के लिए भगवान विष्णु के 1000 नामों का जप।"
+  },
+  "shiv_chalisa": {
+    en: "Shiv Chalisa",
+    hi: "शिव चालीसा"
+  },
+  "shiv_chalisa_short": {
+    en: "Devotional recitation of 40 verses praising Lord Shiva.",
+    hi: "भगवान शिव की स्तुति में 40 श्लोकों का भक्तिपूर्ण पाठ।"
+  },
+
+  // Special Ceremonies
+  "rudra_homa": {
+    en: "Rudra Homa",
+    hi: "रुद्र होम"
+  },
+  "rudra_homa_short": {
+    en: "Special fire ritual dedicated to Lord Shiva's fierce form.",
+    hi: "भगवान शिव के उग्र रूप को समर्पित विशेष अग्नि अनुष्ठान।"
+  },
+  "chandi_homa": {
+    en: "Chandi Homa",
+    hi: "चंडी होम"
+  },
+  "chandi_homa_short": {
+    en: "Fire ceremony invoking Goddess Durga's protective power.",
+    hi: "देवी दुर्गा की सुरक्षात्मक शक्ति का आह्वान करने वाला अग्नि समारोह।"
+  },
+  "ayushya_homa": {
+    en: "Ayushya Homa",
+    hi: "आयुष्य होम"
+  },
+  "ayushya_homa_short": {
+    en: "Longevity fire ritual for health and extended life.",
+    hi: "स्वास्थ्य और दीर्घायु के लिए आयुष्य अग्नि अनुष्ठान।"
+  },
+
+  // Vrat and Festivals
+  "shivaratri_pooja": {
+    en: "Shivaratri Pooja",
+    hi: "शिवरात्रि पूजा"
+  },
+  "shivaratri_pooja_short": {
+    en: "Night-long worship of Lord Shiva on Mahashivaratri.",
+    hi: "महाशिवरात्रि पर भगवान शिव की रात्रिकालीन पूजा।"
+  },
+  "diwali_pooja": {
+    en: "Diwali Pooja",
+    hi: "दिवाली पूजा"
+  },
+  "diwali_pooja_short": {
+    en: "Festival of lights celebration with Lakshmi worship.",
+    hi: "लक्ष्मी पूजा के साथ प्रकाश पर्व का मनाना।"
+  },
+  "karva_chauth": {
+    en: "Karva Chauth",
+    hi: "करवा चौथ"
+  },
+  "karva_chauth_short": {
+    en: "Traditional fast and ritual for husband's long life.",
+    hi: "पति की दीर्घायु के लिए पारंपरिक व्रत और अनुष्ठान।"
+  },
+
+  // Death Rituals
+  "antim_sanskar": {
+    en: "Antim Sanskar",
+    hi: "अंतिम संस्कार"
+  },
+  "antim_sanskar_short": {
+    en: "Final rites and cremation ceremonies with proper rituals.",
+    hi: "उचित अनुष्ठानों के साथ अंतिम संस्कार और दाह संस्कार।"
+  },
+  "shradh_paksh": {
+    en: "Shradh Paksh",
+    hi: "श्राद्ध पक्ष"
+  },
+  "shradh_paksh_short": {
+    en: "Ancestral worship rituals during Pitru Paksha.",
+    hi: "पितृ पक्ष के दौरान पूर्वजों की पूजा अनुष्ठान।"
+  },
+  "tarpan_ceremony": {
+    en: "Tarpan Ceremony",
+    hi: "तर्पण समारोह"
+  },
+  "tarpan_ceremony_short": {
+    en: "Water offering ritual for departed souls and ancestors.",
+    hi: "दिवंगत आत्माओं और पूर्वजों के लिए जल अर्पण अनुष्ठान।"
+  },
   
   // Events Section
   "upcoming_events": {
