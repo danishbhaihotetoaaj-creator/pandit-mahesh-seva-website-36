@@ -1,0 +1,160 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Sanskrit+Text&display=swap');
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 30 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 38 76% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 43 88% 68%;
+
+    --secondary: 40 25% 94%;
+    --secondary-foreground: 30 12% 20%;
+
+    --muted: 40 25% 94%;
+    --muted-foreground: 30 10% 45%;
+
+    --accent: 38 76% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Vedic Color System */
+    --vedic-saffron: 25 100% 60%;
+    --vedic-gold: 43 88% 68%;
+    --vedic-cream: 40 33% 98%;
+    --vedic-maroon: 0 100% 25%;
+    --vedic-ochre: 28 65% 45%;
+    --vedic-sage: 45 15% 65%;
+
+    /* Gradients */
+    --gradient-vedic: linear-gradient(135deg, hsl(var(--vedic-saffron)), hsl(var(--vedic-gold)));
+    --gradient-sacred: linear-gradient(180deg, hsl(var(--vedic-cream)), hsl(var(--vedic-gold) / 0.1));
+    
+    /* Shadows */
+    --shadow-vedic: 0 8px 32px hsl(var(--vedic-gold) / 0.15);
+    --shadow-sacred: 0 4px 16px hsl(var(--vedic-maroon) / 0.1);
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 10% 90%;
+    --input: 30 10% 90%;
+    --ring: 28 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-vedic-cream via-background to-vedic-cream text-foreground font-body;
+    background-attachment: fixed;
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(var(--vedic-gold) / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--vedic-saffron) / 0.05) 0%, transparent 50%),
+      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4A574' fill-opacity='0.03'%3E%3Cpath d='M40 40c0-4.4-3.6-8-8-8v-8c8.8 0 16 7.2 16 16s-7.2 16-16 16v-8c4.4 0 8-3.6 8-8z'/%3E%3Cpath d='M32 24v8c-8.8 0-16 7.2-16 16s7.2 16 16 16v8c-13.3 0-24-10.7-24-24s10.7-24 24-24z'/%3E%3C/g%3E%3C/svg%3E");
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-vedic font-semibold text-vedic-maroon;
+  }
+
+  .sanskrit-text {
+    @apply font-sanskrit text-lg;
+  }
+
+  .devanagari-text {
+    @apply font-devanagari;
+  }
+}
+
+@layer components {
+  .decoration-line {
+    @apply relative inline-block;
+  }
+  
+  .decoration-line::before, 
+  .decoration-line::after {
+    @apply content-[''] absolute h-[2px] w-20 bg-gradient-to-r from-vedic-gold to-vedic-saffron top-1/2 opacity-80;
+  }
+  
+  .decoration-line::before {
+    @apply -left-24;
+  }
+  
+  .decoration-line::after {
+    @apply -right-24;
+  }
+  
+  .vedic-border {
+    @apply border-2 p-8 rounded-xl relative backdrop-blur-sm;
+    background: linear-gradient(135deg, hsl(var(--vedic-cream)), hsl(var(--vedic-cream) / 0.95)), 
+                linear-gradient(135deg, hsl(var(--vedic-gold)), hsl(var(--vedic-saffron)));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: var(--shadow-vedic);
+  }
+  
+  .om-symbol::before {
+    content: "ॐ";
+    @apply text-vedic-gold text-4xl absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-vedic-cream to-background px-4 py-1 rounded-full shadow-lg;
+  }
+  
+  .service-card {
+    @apply p-8 rounded-xl transition-all duration-500 backdrop-blur-sm border border-vedic-gold/20 hover:border-vedic-gold/60;
+    background: linear-gradient(135deg, hsl(var(--background) / 0.8), hsl(var(--vedic-cream) / 0.6));
+    box-shadow: var(--shadow-sacred);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-vedic);
+  }
+
+  .gold-text {
+    @apply text-transparent bg-clip-text;
+    background: var(--gradient-vedic);
+  }
+
+  .sacred-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-vedic-maroon via-vedic-saffron to-vedic-maroon;
+  }
+
+  .vedic-glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-xl shadow-lg;
+  }
+
+  .mobile-responsive {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto mobile-responsive;
+  }
+}
+
+.language-btn {
+  @apply px-4 py-1 rounded-full transition-all duration-300 font-medium;
+}
+
+.language-btn.active {
+  @apply bg-vedic-gold text-white;
+}
